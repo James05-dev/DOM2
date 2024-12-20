@@ -1,0 +1,139 @@
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.cart {
+  width: 80%;
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.cart-item:last-child {
+  border-bottom: none;
+}
+
+.item-details {
+  display: flex;
+  align-items: center;
+}
+
+.item-details .item-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 15px;
+}
+
+.like-btn {
+  font-size: 22px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.liked {
+  color: #e74c3c;
+}
+
+.item-quantity {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item-quantity button {
+  padding: 5px 15px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.item-quantity button:hover {
+  background-color: #f1f1f1;
+}
+
+.quantity {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+.item-price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.delete-btn {
+  padding: 8px 16px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.delete-btn:hover {
+  background-color: #c0392b;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  font-size: 22px;
+  font-weight: bold;
+  background-color: #f1f1f1;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.total-price {
+  color: #2c3e50;
+}
+
+@media (max-width: 768px) {
+  .cart {
+    width: 95%;
+  }
+
+  .cart-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .item-details {
+    margin-bottom: 15px;
+  }
+
+  .item-quantity {
+    margin-bottom: 15px;
+  }
+
+  .total {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .total-price {
+    margin-top: 10px;
+  }
+}
